@@ -2,7 +2,7 @@ module.exports = {
   title: 'data Com', // 设置网站标题
   base: '/dataCom/',
   description: 'Just for fun', //描述
-  dest: './dist',   // 设置输出目录
+  dest: './docs/.vuepress/dist',   // 设置输出目录
   port: 2333, //端口
   themeConfig: { //主题配置
     // 添加导航栏
@@ -14,8 +14,8 @@ module.exports = {
         text: 'github',
         // 这里是下拉列表展现形式。
         items: [
-          { text: 'focus-outside', link: 'https://github.com/TaoXuSheng/focus-outside' },
-          { text: 'stylus-converter', link: 'https://github.com/TaoXuSheng/stylus-converter' },
+          { text: 'focus-outside', link: 'https://github.com/tkoawangzq51/tk-assembly' },
+          { text: 'stylus-converter', link: 'https://app.netlify.com/sites/goofy-bartik-1de084/settings/deploys' },
         ]
       }
     ],
