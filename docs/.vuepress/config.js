@@ -1,6 +1,6 @@
 module.exports = {
   title: 'data Com', // 设置网站标题
-  base: '/dataCom/',
+  base: '/',
   description: 'Just for fun', //描述
   dest: './docs/.vuepress/dist',   // 设置输出目录
   port: 2333, //端口
