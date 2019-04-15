@@ -1,7 +1,7 @@
 module.exports = {
-  title: 'data Com', // 设置网站标题
+  title: 'TK Assembly', // 设置网站标题
   base: '/',
-  description: 'Just for fun', //描述
+  description: 'VUE 组件库', //描述
   dest: './docs/.vuepress/dist',   // 设置输出目录
   port: 2333, //端口
   themeConfig: { //主题配置
@@ -20,7 +20,37 @@ module.exports = {
       }
     ],
     // 为以下路由添加侧边栏
-    sidebar:{
+    sidebar: {
+      '/knowledge/': [
+        {
+          title: 'CSS知识库',
+          collapsable: true,
+          children: [
+            'base/test1',
+            'base/test2',
+            'base/test3',
+            'base/test4',
+          ]
+        },
+        {
+          title: 'JS知识库',
+          collapsable: false,
+          children: [
+          ]
+        },
+        {
+          title: 'node知识库',
+          collapsable: false,
+          children: [
+          ]
+        },
+        {
+          title: 'vue知识库',
+          collapsable: false,
+          children: [
+          ]
+        }
+      ],
       '/baseComponents/': [
         {
           title: '布局类组件',
@@ -47,32 +77,6 @@ module.exports = {
         {
           title: '方法类函数',
           collapsable: true,
-          children: [
-          ]
-        }
-      ],
-      '/knowledge/': [
-        {
-          title: 'CSS知识库',
-          collapsable: false,
-          children: [
-          ]
-        },
-        {
-          title: 'JS知识库',
-          collapsable: false,
-          children: [
-          ]
-        },
-        {
-          title: 'node知识库',
-          collapsable: false,
-          children: [
-          ]
-        },
-        {
-          title: 'vue知识库',
-          collapsable: false,
           children: [
           ]
         }
