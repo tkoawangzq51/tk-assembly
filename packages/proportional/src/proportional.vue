@@ -1,13 +1,13 @@
 <template>
   <button
-    class="el-button"
+    class="tk-proportional"
     @click="handleClick"
     :disabled="disabled"
     :autofocus="autofocus"
-    :type="nativeType"
+    :type="button"
     :class="[
-      type ? 'el-button--' + type : '',
-      buttonSize ? 'el-button--' + buttonSize : '',
+      type ? 'tk-proportional--' + type : '',
+      buttonSize ? 'tk-proportional--' + buttonSize : '',
       {
         'is-disabled': disabled,
         'is-loading': loading,
@@ -16,14 +16,12 @@
       }
     ]"
   >
-    <i class="el-icon-loading" v-if="loading" @click="handleInnerClick"></i>
-    <i :class="icon" v-if="icon && !loading" @click="handleInnerClick"></i>
-    <span v-if="$slots.default" @click="handleInnerClick"><slot></slot></span>
+      <span class="language-color" aria-label="Vue 60.0%" style="width:60.0%; background-color:#2c3e50;" itemprop="keywords">Vue</span>
   </button>
 </template>
 <script>
 export default {
-  name: 'ElButton',
+  name: 'TKProportional',
 
   inject: {
     elFormItem: {
@@ -73,3 +71,13 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.top-bar-tooltip {
+  font-size: 18px;
+}
+
+a {
+  color: black;
+}
+</style>
