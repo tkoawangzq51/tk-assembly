@@ -1,61 +1,43 @@
 <template>
-  <button
+  <div
     class="tk-proportional"
     @click="handleClick"
-    :disabled="disabled"
-    :autofocus="autofocus"
-    :type="button"
     :class="[
-      type ? 'tk-proportional--' + type : '',
-      buttonSize ? 'tk-proportional--' + buttonSize : '',
-      {
-        'is-disabled': disabled,
-        'is-loading': loading,
-        'is-plain': plain,
-        'is-round': round
-      }
+      proportionalSize ? 'tk-proportional--' + proportionalSize : ''
     ]"
   >
       <span class="language-color" aria-label="Vue 60.0%" style="width:60.0%; background-color:#2c3e50;" itemprop="keywords">Vue</span>
-  </button>
+  </div>
 </template>
 <script>
 export default {
   name: 'TKProportional',
 
-  inject: {
-    elFormItem: {
-      default: ''
+  props: {
+    options: {
+      type: Array,
+      default () {
+        return []
+      }
+    },
+    colors: {
+      type: Array,
+      default () {
+        return []
+      }
+    },
+    size: String
+  },
+
+  data () {
+    return {
+      color: []
     }
   },
 
-  props: {
-    type: {
-      type: String,
-      default: 'default'
-    },
-    size: String,
-    icon: {
-      type: String,
-      default: ''
-    },
-    nativeType: {
-      type: String,
-      default: 'button'
-    },
-    loading: Boolean,
-    disabled: Boolean,
-    plain: Boolean,
-    autofocus: Boolean,
-    round: Boolean
-  },
-
   computed: {
-    _elFormItemSize () {
-      return (this.elFormItem || {}).elFormItemSize
-    },
-    buttonSize () {
-      return this.size || this._elFormItemSize || (this.$ELEMENT || {}).size
+    proportionalSize () {
+      return this.size
     }
   },
 
@@ -73,11 +55,10 @@ export default {
 </script>
 
 <style scoped>
-.top-bar-tooltip {
-  font-size: 18px;
+.tk-proportional{
+  width:100%;
 }
-
-a {
-  color: black;
+.tk-proportional--small{
+  width:100px;
 }
 </style>

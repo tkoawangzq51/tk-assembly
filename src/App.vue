@@ -1,17 +1,33 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <TKProportional
+    :options = "options"
+    />
+    <TKProportional
+    :options = "options"
+    size="small"
+    />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TKProportional from './proportional'
 
 export default {
   name: 'app',
+  data () {
+    return {
+      options: [
+        {
+          value: 100,
+          label: 'sda'
+        }
+      ]
+    }
+  },
   components: {
-    HelloWorld
+    TKProportional
   }
 }
 </script>

@@ -19,8 +19,6 @@
   </highlight-code>
 </Common-Democode>
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| 属性             | 说明           | 类型    |可选值  |默认值  |
+| -------------   |:-------------:| -------:| -----:|-----:|
+| size            | 尺寸           | string  |small  |--    |
