@@ -1,10 +1,19 @@
 {
-  "name": "tk-assembly",
+  "name": "@oaidwangzq51/tk-assembly",
   "version": "0.1.0",
-  "private": true,
+  "main":"./dist/tk-assembly.common.js",
+  "files": [
+    "dist.*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-bundle": "vue-cli-service build --target lib --name tk-assembly ./src/proportional/index.js",
     "lint": "vue-cli-service lint",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"

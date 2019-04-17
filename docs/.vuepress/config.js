@@ -9,63 +9,24 @@ module.exports = {
     nav: [
       { text: '主页', link: '/' }, // 导航条
       { text: '组件文档', link: '/baseComponents/' },
-      { text: '知识库', link: '/knowledge/' },
+      // { text: '知识库', link: '/knowledge/' },
       {
         text: 'github',
         // 这里是下拉列表展现形式。
         items: [
-          { text: 'focus-outside', link: 'https://github.com/tkoawangzq51/tk-assembly' },
-          { text: 'stylus-converter', link: 'https://app.netlify.com/sites/goofy-bartik-1de084/settings/deploys' },
+          { text: 'github', link: 'https://github.com/tkoawangzq51/tk-assembly' },
+          { text: 'netlify', link: 'https://app.netlify.com/sites/goofy-bartik-1de084/settings/deploys' },
         ]
       }
     ],
     // 为以下路由添加侧边栏
     sidebar: {
-      '/knowledge/': [
-        {
-          title: 'CSS知识库',
-          collapsable: true,
-          children: [
-            'base/test1',
-            'base/test2',
-            'base/test3',
-            'base/test4',
-          ]
-        },
-        {
-          title: 'JS知识库',
-          collapsable: false,
-          children: [
-          ]
-        },
-        {
-          title: 'node知识库',
-          collapsable: false,
-          children: [
-          ]
-        },
-        {
-          title: 'vue知识库',
-          collapsable: false,
-          children: [
-          ]
-        }
-      ],
       '/baseComponents/': [
-        {
-          title: '布局类组件',
-          collapsable: true,
-          children: [
-            'base/test1',
-            'base/test2',
-            'base/test3',
-            'base/test4',
-          ]
-        },
         {
           title: '可视化组件',
           collapsable: true,
           children: [
+            'base/Proportional'
           ]
         },
         {

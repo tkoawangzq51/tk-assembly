@@ -6,7 +6,11 @@
     />
     <TKProportional
     :options = "options"
-    size="small"
+    />
+    <TKProportional
+    :options = "options"
+    :width = "200"
+    :stroke-width = 20
     />
   </div>
 </template>
@@ -20,8 +24,19 @@ export default {
     return {
       options: [
         {
-          value: 100,
-          label: 'sda'
+          value: 20,
+          color: 'red'
+        },
+        {
+          label: 'ssda'
+        },
+        {
+          value: 28,
+          label: 'sdda'
+        },
+        {
+          value: 25,
+          label: 'sdfa'
         }
       ]
     }
