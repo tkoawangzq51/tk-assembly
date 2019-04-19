@@ -1,7 +1,7 @@
 module.exports = {
-  title: 'TK Assembly', // 设置网站标题
+  title: 'tkcloud-ui', // 设置网站标题
   base: '/',
-  description: 'VUE 组件库', //描述
+  description: 'tkcloud-ui 组件库', //描述
   dest: './docs/.vuepress/dist',   // 设置输出目录
   port: 2333, //端口
   themeConfig: { //主题配置
@@ -16,6 +16,7 @@ module.exports = {
         items: [
           { text: 'github', link: 'https://github.com/tkoawangzq51/tk-assembly' },
           { text: 'netlify', link: 'https://app.netlify.com/sites/goofy-bartik-1de084/settings/deploys' },
+          { text: 'github，npm', link: 'https://github.com/tk-technology/tkcloud-ui' },
         ]
       }
     ],
