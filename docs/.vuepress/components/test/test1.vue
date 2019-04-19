@@ -14,7 +14,9 @@
 </template>
 
 <script>
-import TKProportional from '../src/proportional'
+
+import 'tkcloud-ui'
+import 'tkcloud-ui/dist/tkcloud-ui.css'
 
 export default {
   name: 'app',
@@ -61,9 +63,6 @@ export default {
         }
       ]
     }
-  },
-  components: {
-    TKProportional
   }
 }
 </script>

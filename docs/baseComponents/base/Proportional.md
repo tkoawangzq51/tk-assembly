@@ -20,6 +20,8 @@
     </template>
 
 
+    import 'tkcloud-ui'
+    import 'tkcloud-ui/dist/tkcloud-ui.css'
     export default {
       name: 'app',
       data () {
@@ -65,9 +67,6 @@
             }
           ]
         }
-      },
-      components: {
-        TKProportional
       }
     }
   </highlight-code>

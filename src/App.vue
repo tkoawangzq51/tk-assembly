@@ -6,9 +6,6 @@
     />
     <TKProportional
     :options = "options"
-    />
-    <TKProportional
-    :options = "options"
     :width = "200"
     :stroke-width = 20
     />
@@ -16,7 +13,6 @@
 </template>
 
 <script>
-import TKProportional from './proportional'
 
 export default {
   name: 'app',
@@ -25,9 +21,11 @@ export default {
       options: [
         {
           value: 20,
-          color: 'red'
+          label: 'red'
         },
         {
+          value: 20,
+          color: 'red',
           label: 'ssda'
         },
         {
@@ -40,9 +38,6 @@ export default {
         }
       ]
     }
-  },
-  components: {
-    TKProportional
   }
 }
 </script>
