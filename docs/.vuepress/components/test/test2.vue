@@ -1,3 +1,4 @@
+<!--用户基本信息页面-->
 <template>
   <section class = "p-test">
     <circle-progress
@@ -76,6 +77,9 @@
   </section>
 </template>
 <script>
+import 'tkcloud-ui'
+import 'tkcloud-ui/dist/tkcloud-ui.css'
+
 // import CircleProgress from './components/circle'
 export default {
   data () {
@@ -111,7 +115,7 @@ export default {
   text-align: center;
   background-color: white;
 }
-.p-test  ul {
+.p-test ul {
     padding: 30px 20px;
     top: 50px;
     left: 50px;
@@ -120,22 +124,22 @@ export default {
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.1);
   }
-.p-test  li {
+.p-test li {
     margin-top: 14px;
     font-size: 16px;
     list-style: none;
   }
-.p-test  li:nth-child(1) {
+.p-test li:nth-child(1) {
     margin: 0
   }
-.p-test  label {
+.p-test label {
     display: inline-block;
-    width: 170px;
+    width: 140px;
     height: 24px;
     line-height: 24px;
     text-align: left;
   }
-.p-test  input {
+.p-test input {
     display: inline-block;
     padding: 0 10px;
     width: 150px;
@@ -146,7 +150,7 @@ export default {
     border-radius: 2px;
     text-decoration: none
   }
-.p-test  .btn {
+.p-test .btn {
     margin: 30px auto 0;
     width: 200px;
     height: 40px;

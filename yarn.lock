@@ -1275,6 +1275,13 @@
     error-stack-parser "^2.0.0"
     string-width "^2.0.0"
 
+"@tkoawangzq51/tkcloud-ui@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@tkoawangzq51/tkcloud-ui/-/tkcloud-ui-0.1.0.tgz#ae32f038d13648a17f33ccb857b54d304d6e92f3"
+  dependencies:
+    core-js "^2.6.5"
+    vue "^2.6.10"
+
 "@types/events@*":
   version "3.0.0"
   resolved "http://registry.npm.taobao.org/@types/events/download/@types/events-3.0.0.tgz#2862f3f58a9a7f7c3e78d79f130dd4d71c25c2a7"
@@ -9057,6 +9064,13 @@ tiny-emitter@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-2.1.0.tgz#1d1a56edfc51c43e863cbb5382a72330e3555423"
 
+tkcloud-ui@0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/tkcloud-ui/-/tkcloud-ui-0.1.5.tgz#97bcb3b1a4a0906b0f1b09a985a14bdacdaae99a"
+  dependencies:
+    core-js "^2.6.5"
+    vue "^2.5.6"
+
 tmp@^0.0.33:
   version "0.0.33"
   resolved "http://registry.npm.taobao.org/tmp/download/tmp-0.0.33.tgz#6d34335889768d21b2bcda0aa277ced3b1bfadf9"
@@ -9501,7 +9515,7 @@ vue-template-es2015-compiler@^1.9.0:
   version "1.9.1"
   resolved "http://registry.npm.taobao.org/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
 
-vue@^2.5.16, vue@^2.6.6:
+vue@^2.5.16, vue@^2.5.6, vue@^2.6.10, vue@^2.6.6:
   version "2.6.10"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
 

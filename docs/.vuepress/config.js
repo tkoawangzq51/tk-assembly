@@ -27,7 +27,8 @@ module.exports = {
           title: '可视化组件',
           collapsable: true,
           children: [
-            'base/Proportional'
+            'base/Proportional',
+            'base/test2'
           ]
         },
         {
